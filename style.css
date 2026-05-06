@@ -1,0 +1,197 @@
+html {
+    background-color: #070707;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: grid;
+  grid-template-rows: auto 1fr auto auto;
+  grid-template-areas: "navbar" "main" "section" "footer";
+}
+
+nav {
+  grid-area: navbar;
+  padding: 0;
+  position: relative;
+  overflow-x: hidden;
+  display: flex;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.nav-actions {
+  margin-left: auto;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.logolink {
+  height: 50px;
+  width: 50px;
+}
+
+.navbar a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  background-color: #070707;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 0;
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.navbar a:hover,
+.navbar a:focus {
+  background-color: #2b2b2b;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+}
+
+.navbar a.signup-btn {
+  padding: 0.4rem 0.9rem;
+  background-color: #8fd4ff;
+  color: #070707;
+  border-radius: 0.75rem;
+}
+
+.navbar a.signup-btn:hover,
+.navbar a.signup-btn:focus {
+  background-color: #74c4ff;
+  box-shadow: 0 0 12px rgba(143, 212, 255, 0.45);
+  color: #070707;
+}
+
+.navbar a.login-btn {
+  background-color: #070707;
+  color: #ffffff;
+  border-radius: 0;
+}
+
+.navbar a.login-btn:hover,
+.navbar a.login-btn:focus {
+  background-color: #2b2b2b;
+  color: #ffffff;
+}
+
+main {
+    grid-area: main;
+    padding: 1rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    color: #ffffff;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #0f0f0f;
+    padding: 0.5rem;
+    padding-bottom: 0.25rem;
+    padding-top: 0.25rem;
+    color: #ffffff;
+} 
+
+/* Main Content Gridbox */
+
+
+
+main {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: center;
+    margin: 2.5%;
+    color: #ffffff;
+    flex: 1;
+}
+
+.title {
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin-top: 10vh;
+}
+
+.titlelogos {
+    height: 250px;
+    width: 250px;
+    margin-left: 12vw;
+    margin-top: 10vh;
+}
+
+.start {
+    grid-column: 1 / -1;
+    justify-self: center;
+    margin-top: 2rem;
+    padding: 0.75rem 3rem;
+    background-color: #8fd4ff;
+    color: #070707;
+    border: none;
+    border-radius: 0.5rem;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.start:hover {
+    background-color: #74c4ff;
+    box-shadow: 0 0 48px rgba(143, 212, 255, 0.45);
+}
+
+.start a {
+    text-decoration: none;
+    color: #070707;
+}
+
+.why-section {
+    grid-area: section;
+    margin: 2.5%;
+    padding: 1rem;
+}
+
+.whyusebox {
+    padding: 1rem;
+    background-image: linear-gradient(#0f0f0f,);
+    margin-top: 7rem;
+}
+
+.whyuse {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #fefefe;
+}
+
+.start {
+    margin-top: 7.5rem;
+    padding: 1rem 4rem;
+    background-color: #74c4ff;
+    box-shadow: 0 0 12px rgba(143, 212, 255, 0.45);
+    color: #070707;
+    border: none;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+}
